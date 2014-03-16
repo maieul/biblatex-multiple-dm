@@ -16,6 +16,6 @@
 \ProvidesFile{multiple-dm.dbx}
 
 \renewcommand{\do}[1]{\blx@inputonce{#1.dbx}{}{}{}{}{}}
-\expandafter\docsvlist\expandafter{\biblatex-multiple-dm@tools}
+\expandafter\docsvlist\expandafter{\biblatexmultipledm@tools}
 
-\RequireBibliographyStyle{\biblatex-multiple-dm@bibstyle}
+\RequireBibliographyStyle{\biblatexmultipledm@bibstyle}
