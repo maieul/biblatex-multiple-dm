@@ -15,7 +15,7 @@
 
 \ProvidesFile{multiple-dm.dbx}
 
-\renewcommand{\do}[1]{\blx@inputonce{#1.dbx}{DM Tools data model}{}{}{}{}}
+\renewcommand{\do}[1]{\blx@inputonce{#1.dbx}{}{}{}{}{}}
 \expandafter\docsvlist\expandafter{\biblatex-multiple-dm@tools}
 
 \RequireBibliographyStyle{\biblatex-multiple-dm@bibstyle}
