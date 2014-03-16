@@ -18,4 +18,3 @@
 \renewcommand{\do}[1]{\blx@inputonce{#1.dbx}{}{}{}{}{}}
 \expandafter\docsvlist\expandafter{\biblatexmultipledm@tools}
 
-\RequireBibliographyStyle{\biblatexmultipledm@bibstyle}
