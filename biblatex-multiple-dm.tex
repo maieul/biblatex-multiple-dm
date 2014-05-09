@@ -1,0 +1,40 @@
+\documentclass{ltxdockit}[2011/03/25]
+\usepackage{btxdockit}
+\usepackage{fontspec}
+\usepackage[mono=false]{libertine}
+\usepackage{microtype}
+\usepackage[american]{babel}
+\usepackage[strict]{csquotes}
+\setmonofont[Scale=MatchLowercase]{DejaVu Sans Mono}
+\usepackage{shortvrb}
+\usepackage{pifont}
+\usepackage{minted}
+% Usefull commands
+\newcommand{\biblatex}{biblatex\xspace}
+\pretocmd{\bibfield}{\sloppy}{}{}
+\pretocmd{\bibtype}{\sloppy}{}{}
+\newcommand{\namebibstyle}[1]{\texttt{#1}}
+% Meta-datas
+\titlepage{%
+	title={Loading multiple data models with biblatex},
+	subtitle={},
+	email={maieul <at> maieul <dot> net},
+	author={Maïeul Rouquette},
+	revision={1.0.0},
+	date={09/05/2014},
+	url={https://github.com/maieul/biblatex-multiple-dm}}
+
+\begin{document}
+
+\printtitlepage
+\tableofcontents
+
+\begin{changelog}
+
+
+
+\begin{release}{1.0.0}{2014-05-09}
+\item First public release.
+\end{release}
+\end{changelog}
+\end{document}
