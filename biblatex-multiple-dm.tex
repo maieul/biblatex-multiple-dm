@@ -34,9 +34,22 @@ Datamodel in \biblatex are conceived to be distributed as a part of citations an
 
 This package \emph{biblatex-multiple-dm} allows to load multiple datamodel without creating a full \biblatex style. 
 
+\section{Use}
+The package must be loaded before the \biblatex package. It's loaded with two options:
+\begin{description}
+	\item[tools] which is a comma separated list of the datamodels to be loaded.
+	\item[bibstyle] which is the main bibstyle to be loaded.
+\end{description}
 
+For example
+\begin{minted}{latex}
+\usepackage[tools={realauthor,manuscripts},bibstyle=verbose]{biblatex-multiple-dm}
+\end{minted}
 
-
+After that, the \biblatex package must be loaded with the bibstyle option equal to \verb+multiple-dm+:
+\begin{minted}{latex}
+\usepackage[bibstyle=multiple-dm,citestyle=verbose-trad2]{biblatex}
+\end{minted}
 \section{Credits}
 
 This package was created for Maïeul Rouquette's phd dissertation\footnote{\url{http://apocryphes.hypothese.org}.} in 2014. It is licensed on the \emph{\LaTeX\ Project Public License}\footnote{\url{http://latex-project.org/lppl/lppl-1-3c.html}.}. It's freely inspired by a code of Oleg Domanov\footcite{\url{http://tex.stackexchange.com/a/154568/7712}.}.
