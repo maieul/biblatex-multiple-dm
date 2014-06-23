@@ -13,9 +13,11 @@
 % The Current Maintainer of this work is Maïeul Rouquette
 % This work consists of the files multiple-dm.dbx, mutliple-dm.bbx, multiple-dm.sty
 
-\ProvidesFile{multiple-dm.bbx}
+\ProvidesFile{multiple-dm.bbx}[\abx@bbxid]
 
 \renewcommand{\do}[1]{\blx@inputonce{#1.bbx}{}{}{}{}{}}
 \expandafter\docsvlist\expandafter{\biblatexmultipledm@tools}
 
 \RequireBibliographyStyle{\biblatexmultipledm@bibstyle}
+
+\endinput
