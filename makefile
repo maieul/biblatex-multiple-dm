@@ -1,5 +1,5 @@
-FILES = *sty *tex *pdf README *.bib makefile latexmkrc
-%.pdf: %.tex latexmkrc %.bib
+FILES = *sty *tex *pdf README  makefile latexmkrc
+%.pdf: %.tex latexmkrc 
 	latexmk *tex
 dist: biblatex-multiple-dm.pdf
 	@$(RM) ../biblatex-multiple-dm.zip
