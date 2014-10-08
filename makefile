@@ -5,7 +5,7 @@ dist: biblatex-multiple-dm.pdf
 	@$(RM) ../biblatex-multiple-dm.zip
 	rm -rf biblatex-multiple-dm
 	mkdir biblatex-multiple-dm	
-	cp $(FILES) biblatex-multiple-dm
+	ln $(FILES) biblatex-multiple-dm
 	zip -r ../biblatex-multiple-dm.zip  biblatex-multiple-dm
   
 clean:
