@@ -1,4 +1,4 @@
-FILES = *sty *tex *pdf *bbx *dbx README  makefile latexmkrc
+FILES = *sty *tex *pdf *bbx *cbx *dbx README  makefile latexmkrc
 %.pdf: %.tex latexmkrc 
 	latexmk *tex
 dist: biblatex-multiple-dm.pdf

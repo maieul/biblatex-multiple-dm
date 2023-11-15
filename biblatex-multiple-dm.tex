@@ -40,16 +40,17 @@ The package must be loaded before the \biblatex package. It's loaded with two op
 \begin{description}
 	\item[tools] which is a comma separated list of the datamodels to be loaded.
 	\item[bibstyle] which is the main bibstyle to be loaded.
+	\item[citestyle] which is the main citestyle to be loaded.
 \end{description}
 
 For example:
 \begin{minted}{latex}
-\usepackage[tools={realauthor,manuscripts},bibstyle=verbose]{biblatex-multiple-dm}
+\usepackage[tools={realauthor,manuscripts},bibstyle=verbose,citestyle=verbose-trad2]{biblatex-multiple-dm}
 \end{minted}
 
-After that, the \biblatex package must be loaded with the bibstyle option equal to \verb+multiple-dm+:
+After that, the \biblatex package must be loaded with the style option equal to \verb+multiple-dm+:
 \begin{minted}{latex}
-\usepackage[bibstyle=multiple-dm,citestyle=verbose-trad2]{biblatex}
+\usepackage[style=multiple-dm]{biblatex}
 \end{minted}
 
 
